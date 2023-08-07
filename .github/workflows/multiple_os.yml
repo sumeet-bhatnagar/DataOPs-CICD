@@ -1,0 +1,16 @@
+name: "Testing on multiple OSes"
+on:
+    push:
+        branches: [main]
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "hello world from ubuntu"
+            - run: echo ${{ github.event_name}}
+    
+    job2:
+        runs-on: windows-latest
+        steps:
+            - run: echo "hello world from windows 10"
+            - run: echo ${{ github.event_name}}
