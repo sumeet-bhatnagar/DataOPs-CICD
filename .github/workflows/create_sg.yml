@@ -13,7 +13,7 @@ jobs:
             - name: Create Security group
               run: |
                  aws ec2 create-security-group \
-                 --group-name sg-sumeetb-githubactions \
+                 --group-name sgsumeetbgithubactions \
                  --description "Create security group"
                  --vpc-id vpc-08e5bc89ab4518ee3
 
