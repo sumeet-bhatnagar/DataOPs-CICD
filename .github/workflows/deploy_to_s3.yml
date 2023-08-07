@@ -14,6 +14,8 @@ jobs:
                     aws-region: ${{secrets.AWS_DEFAULT_REGION}}
             - name: ls S3 buckets
               run: aws s3 ls
+            - name: Copying to S3 bucket
+              run: aws s3 cp *.yaml s3://bkt-sumeet-githubactions
 
             
 
