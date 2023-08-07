@@ -1,0 +1,11 @@
+name: "Github actions example"
+on: ["push"]
+jobs:
+    Job1:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello World from github actions"
+            - run: pwd
+            - name: "Checking github workspace"
+              run: ls ${{ github.workspace }}
+            
