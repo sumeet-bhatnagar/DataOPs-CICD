@@ -1,0 +1,11 @@
+name: "Cloning repo in env"
+on: push
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clones repo
+              uses: actions/checkout@v3
+            - name: List files
+              run: ls ~
+        
