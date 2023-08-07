@@ -15,7 +15,7 @@ jobs:
             - name: ls S3 buckets
               run: aws s3 ls
             - name: Copying to S3 bucket
-              run: aws s3 cp ./*.yaml s3://bkt-sumeet-githubactions
+              run: aws s3 cp ./a.txt s3://bkt-sumeet-githubactions
 
             
 
